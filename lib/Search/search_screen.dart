@@ -63,7 +63,6 @@ class SearchScreen extends StatelessWidget {
       "img": 'https://images.pexels.com/photos/320956/pexels-photo-320956.jpeg'
     },
 
-
   ];
 
   @override
