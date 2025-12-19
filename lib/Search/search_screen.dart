@@ -6,23 +6,64 @@ class SearchScreen extends StatelessWidget {
   TextEditingController searchController = TextEditingController();
   var arrContent = [
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg'
     },
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/133394/pexels-photo-133394.jpeg'
     },
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg'
     },
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg'
     },
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/34231/antler-antler-carrier-fallow-deer-hirsch.jpg'
     },
     {
-      "img": ''
+      "img": 'https://images.pexels.com/photos/45853/grey-crowned-crane-bird-crane-animal-45853.jpeg'
     },
+    {
+      "img": 'https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/106685/pexels-photo-106685.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/75973/pexels-photo-75973.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/56733/pexels-photo-56733.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/133394/pexels-photo-133394.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/460961/pexels-photo-460961.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/66258/staniel-cay-swimming-pig-seagull-fish-66258.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/3651618/pexels-photo-3651618.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/752035/pexels-photo-752035.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/634613/pexels-photo-634613.jpeg'
+    },
+    {
+      "img": 'https://images.pexels.com/photos/320956/pexels-photo-320956.jpeg'
+    },
+
+
   ];
 
   @override
@@ -162,8 +203,26 @@ class SearchScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              //Fth Container end
             ],
           ),
+          //Row End
+          
+          
+          Expanded(
+            child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                itemCount: arrContent.length,
+                itemBuilder: (context, index){
+                  return Container(
+                    height: 124,
+                    width: 124,
+                    decoration: BoxDecoration(),
+                    child: Image.network(arrContent[index]['img'].toString(), fit: BoxFit.cover,),
+                  );
+                }),
+          )
+          
         ],
       ),
     );
