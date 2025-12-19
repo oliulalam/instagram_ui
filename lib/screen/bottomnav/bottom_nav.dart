@@ -30,6 +30,8 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         backgroundColor: Colors.black,
         onTap: (index){
           setState(() {
@@ -37,11 +39,11 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           });
         },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home, size: 30,), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.search, size: 30,), label: ''),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.plus_app, size: 30,), label: ''),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.heart, size: 30,), label: ''),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.person, size: 30,), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.home, size: 30,), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search, size: 30,), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.plus_app, size: 30,), label: 'Post'),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.heart, size: 30,), label: 'Heart'),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.person, size: 30,), label: 'Profile'),
         ],
       ),
       body: IndexedStack(
