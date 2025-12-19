@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram/screen/SignUp/sign_up.dart';
+import 'package:instagram/screen/bottomnav/bottom_nav.dart';
 import 'package:instagram/widgets/ui_helper.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             UiHelper.CustomImage(imgUrl: 'Instagram Logo_text.png'),
-            SizedBox(height: 49,),
+            SizedBox(height: 49),
             UiHelper.CustomTextField(
               controller: emailController,
               text: 'Email',
@@ -50,7 +51,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
             SizedBox(height: 10),
 
-            UiHelper.CustomButton(callback: () {}, buttonName: "Log In"),
+            UiHelper.CustomButton(
+              callback: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BottomNavScreen()),
+                );
+              },
+              buttonName: "Log In",
+            ),
 
             SizedBox(height: 20),
             Row(
@@ -78,10 +87,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
                 UiHelper.CustomTextButton(
-                    callback: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUpScreen()));
-                    },
-                    text: 'Sign Up'
+                  callback: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpScreen()),
+                    );
+                  },
+                  text: 'Sign Up',
                 ),
               ],
             ),

@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SearchScreen extends StatelessWidget{
+class HeartScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Search Screen"),
+        child: Text("Heart Screen"),
       ),
     );
   }
