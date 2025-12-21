@@ -30,6 +30,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
         currentIndex: currentScreen,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black54,
+        iconSize: 28,
+        selectedFontSize: 30,
         onTap: (value){
           currentScreen = value;
           setState(() {
