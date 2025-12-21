@@ -9,6 +9,7 @@ TextStyle myTextStyle15({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 15,
   );
 }
@@ -21,6 +22,7 @@ TextStyle myTextStyle18({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 18,
   );
 }
@@ -33,6 +35,7 @@ TextStyle myTextStyle20({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 20,
   );
 }
@@ -45,6 +48,7 @@ TextStyle myTextStyle22({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 22,
   );
 }
@@ -57,6 +61,7 @@ TextStyle myTextStyle25({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 25,
   );
 }
@@ -69,6 +74,7 @@ TextStyle myTextStyle28({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 28,
   );
 }
@@ -81,6 +87,7 @@ TextStyle myTextStyle30({
   return TextStyle(
     fontWeight: fontWeight,
     fontFamily: fontFamily,
+    color: fontColor,
     fontSize: 30,
   );
 }
