@@ -149,9 +149,72 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-        
+            SizedBox(height: 20,),
             //----------------USER POST-------------------------------
-            UserPostCard(),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-achraf210-3383361.jpg',
+              postImage: 'assets/images/pexels-achraf210-3383361.jpg',
+              numLikes: 1234,
+              userName: 'Priya_gamra',
+              subTitle: 'mile ho tum hum ko',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-jill-wellington-1638660-3334355.jpg',
+              postImage: 'assets/images/pexels-jill-wellington-1638660-3334355.jpg',
+              numLikes: 5632,
+              userName: 'jill-wellington',
+              subTitle: 'ami taray taray rotiye dibo ',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-dhanno-18885581.jpg',
+              postImage: 'assets/images/pexels-dhanno-18885581.jpg',
+              numLikes: 2234,
+              userName: 'dhanno_jony',
+              subTitle: 'bondhu tumi aiba re ',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-darya-grey_owl-132130036-14884567.jpg',
+              postImage: 'assets/images/pexels-darya-grey_owl-132130036-14884567.jpg',
+              numLikes: 7564,
+              userName: 'darya-grey',
+              subTitle: 'bondhu tumi jhorer din er',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-cottonbro-3171770.jpg',
+              postImage: 'assets/images/pexels-cottonbro-3171770.jpg',
+              numLikes: 2134,
+              userName: 'cottonbro',
+              subTitle: 'tumi amar jibon re bondhu',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-bertellifotografia-1789427.jpg',
+              postImage: 'assets/images/pexels-bertellifotografia-1789427.jpg',
+              numLikes: 5675,
+              userName: 'bertellifotografia',
+              subTitle: 'this is not way to save me',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-andersonguerra-1146505.jpg',
+              postImage: 'assets/images/pexels-andersonguerra-1146505.jpg',
+              numLikes: 4321,
+              userName: 'andersonguerra',
+              subTitle: 'your everything my heart',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-alipazani-2878373.jpg',
+              postImage: 'assets/images/pexels-alipazani-2878373.jpg',
+              numLikes: 2543,
+              userName: 'alipazani',
+              subTitle: 'Jinde nihi mile gi 2 bara',
+            ),
+            UserPostCard(
+              postProfile: 'assets/images/pexels-aldiq-2919625.jpg',
+              postImage: 'assets/images/pexels-aldiq-2919625.jpg',
+              numLikes: 434,
+              userName: 'Aldig_alix',
+              subTitle: 'din jay rat jay tumi aso na',
+            ),
+
         
             
             
